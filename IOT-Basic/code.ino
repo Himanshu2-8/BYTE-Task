@@ -42,6 +42,12 @@ void loop()
       digitalWrite(8,LOW);
       digitalWrite(10,HIGH);
     }
-    
   }
+    if(digitalRead(2)==0){
+      while(digitalRead(2)==0){
+        digitalWrite(12,LOW);
+        digitalWrite(8,LOW);
+        digitalWrite(10,LOW);
+      }
+    }
 }
